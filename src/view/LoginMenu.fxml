@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginMenuContext" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginMenuController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="280.0" style="-fx-background-color: #ced6e0;">
+         <children>
+            <Label layoutX="53.0" layoutY="451.0" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css">
+               <effect>
+                  <DropShadow height="31.0" radius="15.0" spread="0.22" width="31.0" />
+               </effect></Label>
+            <Label layoutX="53.0" layoutY="278.0" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css">
+               <effect>
+                  <DropShadow height="31.0" radius="15.0" spread="0.2" width="31.0" />
+               </effect></Label>
+            <Label layoutX="53.0" layoutY="622.0" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css">
+               <effect>
+                  <DropShadow height="31.0" radius="15.0" spread="0.26" width="31.0" />
+               </effect></Label>
+            <Label layoutX="53.0" layoutY="106.0" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css">
+               <effect>
+                  <DropShadow height="31.0" radius="15.0" spread="0.22" width="31.0" />
+               </effect></Label>
+            <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="63.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/travelling-vehicles-of-a-road.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="105.0" fitWidth="111.0" layoutX="83.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/parking-icon-27.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="217.0" prefHeight="36.0" prefWidth="146.0" text="In Parking">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="63.0" layoutY="384.0" prefHeight="36.0" prefWidth="146.0" text="On Delivary">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="145.0" fitWidth="146.0" layoutX="66.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/on%20delivary.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="560.0" prefHeight="36.0" prefWidth="146.0" text="Vehicle List">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="114.0" fitWidth="145.0" layoutX="80.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/kisspng-vector-graphics-computer-icons-taxi-clip-art-image-driver-svg-png-icon-free-download-458442-onli-5b6e54022cda76.7651502215339571221837.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="59.0" layoutY="733.0" prefHeight="36.0" prefWidth="146.0" text="Driver List">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="106.0" onAction="#btnInParking" opacity="0.0" prefHeight="152.0" prefWidth="173.0" stylesheets="@../styles/style.css" text="Button" />
+            <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="278.0" onAction="#btnOnDelivery" opacity="0.0" prefHeight="152.0" prefWidth="173.0" stylesheets="@../styles/style.css" />
+            <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="451.0" onAction="#btnVehicleList" opacity="0.0" prefHeight="152.0" prefWidth="173.0" stylesheets="@../styles/style.css" />
+            <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="622.0" onAction="#btnVDriverList" opacity="0.0" prefHeight="152.0" prefWidth="173.0" stylesheets="@../styles/style.css" text="Button" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="280.0" layoutY="112.0" prefHeight="640.0" prefWidth="720.0" style="-fx-background-color: #70a1ff;" stylesheets="@../styles/style.css">
+         <children>
+            <ImageView fitHeight="619.0" fitWidth="405.0" layoutX="151.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/output-onlinepngtools%20(3).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="66.0" prefWidth="1000.0" style="-fx-background-color: #1289A7;" styleClass="button2" stylesheets="@../styles/style.css" text="Saman Rice Vehicle Parking System" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Label alignment="BASELINE_LEFT" layoutX="866.0" layoutY="753.0" prefHeight="36.0" prefWidth="133.0" style="-fx-background-color: #ff3838;" styleClass="button" stylesheets="@../styles/style.css" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="54.0" fitWidth="45.0" layoutX="955.0" layoutY="753.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logOut.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="866.0" layoutY="754.0" onAction="#btnLogOut" opacity="0.0" prefHeight="44.0" prefWidth="133.0" stylesheets="@../styles/style.css" text="Button" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="348.0" layoutY="65.0" prefHeight="36.0" prefWidth="651.0" text="       MANAGEMENT MENU">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="58.0" fitWidth="53.0" layoutX="331.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/menu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

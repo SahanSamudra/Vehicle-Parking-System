@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddDriverContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="600.0" styleClass="button" stylesheets="@../styles/style.css">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="13.0" layoutY="19.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/park.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="169.0" prefHeight="17.0" prefWidth="155.0" text="Driver Name">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="225.0" prefHeight="30.0" prefWidth="170.0" text="NIC">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="282.0" prefHeight="30.0" prefWidth="222.0" text="Driving L.Number">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="339.0" prefHeight="17.0" prefWidth="155.0" text="Address">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="267.0" layoutY="168.0" prefHeight="31.0" prefWidth="288.0" />
+            <TextField layoutX="267.0" layoutY="224.0" prefHeight="31.0" prefWidth="288.0" />
+            <TextField layoutX="267.0" layoutY="280.0" prefHeight="31.0" prefWidth="288.0" />
+            <JFXButton buttonType="RAISED" layoutX="366.0" layoutY="479.0" style="-fx-background-color: #009432;" stylesheets="@../styles/style.css" text="Add Driver" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="96.0" fitWidth="96.0" layoutX="257.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/kisspng-vector-graphics-computer-icons-taxi-clip-art-image-driver-svg-png-icon-free-download-458442-onli-5b6e54022cda76.7651502215339571221837.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="58.0" layoutX="290.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/javafx-loading-100x100.gif" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="139.0" layoutY="479.0" onAction="#btnCancelAddDriver" prefHeight="39.0" prefWidth="126.0" style="-fx-background-color: #EA2027;" stylesheets="@../styles/style.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <TextField layoutX="267.0" layoutY="336.0" prefHeight="31.0" prefWidth="288.0" />
+            <Label layoutX="47.0" layoutY="390.0" prefHeight="17.0" prefWidth="155.0" text="Contact Number">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="269.0" layoutY="390.0" prefHeight="31.0" prefWidth="288.0" />
+            <Label layoutX="310.0" layoutY="19.0" prefHeight="75.0" prefWidth="44.0" text="+">
+               <font>
+                  <Font name="System Bold" size="61.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

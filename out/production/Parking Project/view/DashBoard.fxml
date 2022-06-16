@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashBoardFormContext" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="275.0" style="-fx-background-color: #ced6e0#ced6e0;">
+         <children>
+            <Label layoutX="54.0" layoutY="354.0" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css">
+               <effect>
+                  <DropShadow height="10.0" radius="14.5825" spread="0.2" width="50.33" />
+               </effect></Label>
+            <Label layoutX="54.0" layoutY="553.0" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css">
+               <effect>
+                  <DropShadow height="29.11" radius="19.5275" spread="0.2" width="51.0" />
+               </effect></Label>
+            <Label alignment="CENTER" layoutX="68.0" layoutY="643.0" prefHeight="36.0" prefWidth="146.0" text="On Delivary">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="61.0" layoutY="455.0" prefHeight="36.0" prefWidth="162.0" text="Park Vehicle">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="63.0" layoutY="668.0" prefHeight="36.0" prefWidth="146.0" text="Shift">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="101.0" fitWidth="107.0" layoutX="92.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/parkkk.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="137.0" fitWidth="130.0" layoutX="76.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/on%20delivary.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="55.0" layoutY="354.0" onAction="#btnParkVehicle" opacity="0.0" prefHeight="152.0" prefWidth="173.0" stylesheets="@../styles/style.css">
+               <effect>
+                  <DropShadow height="39.66" radius="16.22" width="27.22" />
+               </effect></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="55.0" layoutY="553.0" onAction="#btnOnDeliveryLast" opacity="0.0" prefHeight="152.0" prefWidth="173.0" stylesheets="@../styles/style.css" />
+            <Label fx:id="lblTime" alignment="CENTER" layoutX="31.0" layoutY="142.0" prefHeight="65.0" prefWidth="220.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css" text="10;10;23">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" alignment="BOTTOM_RIGHT" layoutX="28.0" layoutY="263.0" prefHeight="65.0" prefWidth="220.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css" text="2000/09/30">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="46.0" layoutY="102.0" prefHeight="31.0" prefWidth="188.0" text="Time">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="46.0" layoutY="223.0" prefHeight="31.0" prefWidth="188.0" text="Date">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="65.0" fitWidth="72.0" layoutX="46.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/time.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="54.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/output-onlinepngtools%20(8).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="725.0" layoutY="745.0" onAction="#btnLoginForm" prefHeight="54.0" prefWidth="275.0" style="-fx-background-color: #3c40c6;" stylesheets="@../styles/style.css" text="Management Log In" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="54.0" fitWidth="52.0" layoutX="946.0" layoutY="746.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/login_icon.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="278.0" layoutY="110.0" prefHeight="631.0" prefWidth="720.0" styleClass="button" stylesheets="@../styles/style.css" />
+      <TextField fx:id="txt" alignment="CENTER_RIGHT" layoutX="278.0" layoutY="110.0" prefHeight="319.0" prefWidth="720.0" styleClass="button" stylesheets="@../styles/style.css">
+         <font>
+            <Font name="System Bold" size="150.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="66.0" prefWidth="1000.0" style="-fx-background-color: #1289A7;" styleClass="button2" stylesheets="@../styles/style.css" text="Saman Rice Vehicle Parking System" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="319.0" fitWidth="317.0" layoutX="669.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/slots.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="64.0" prefHeight="36.0" prefWidth="1000.0" text="Dash Board">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="453.0" prefHeight="31.0" prefWidth="162.0" text="Select Vehicle">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="550.0" prefHeight="31.0" prefWidth="162.0" text="Vehicle Type">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="643.0" prefHeight="31.0" prefWidth="162.0" text="Driver">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="303.0" layoutY="322.0" prefHeight="46.0" prefWidth="394.0" text="Your Parking Slot Number">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="269.0" fitWidth="229.0" layoutX="386.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/parkk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="573.0" fitWidth="581.0" layoutX="352.0" layoutY="143.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/park.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="DashBoardLoginContext" layoutX="200.0" layoutY="100.0" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="txtVehicleType" layoutX="283.0" layoutY="451.0" prefHeight="31.0" prefWidth="368.0" />
+            <Label fx:id="lblSlot" alignment="CENTER" layoutX="536.0" layoutY="87.0" prefHeight="196.0" prefWidth="188.0" text="-">
+               <font>
+                  <Font name="System Bold" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="cmbSelectVehicle" layoutX="485.0" layoutY="453.0" prefHeight="31.0" prefWidth="368.0" />
+      <ComboBox fx:id="cmbSelectDriver" layoutX="485.0" layoutY="643.0" prefHeight="31.0" prefWidth="368.0" />
+   </children>
+</AnchorPane>

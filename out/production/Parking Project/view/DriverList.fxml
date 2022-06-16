@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DriverListContext" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverListController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #ced6e0#ced6e0;">
+         <children>
+            <Label layoutX="279.0" layoutY="7.0" prefHeight="105.0" prefWidth="720.0" style="-fx-background-color: white;" />
+            <Label layoutX="54.0" layoutY="283.0" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css" />
+            <Label layoutX="54.0" layoutY="456.0" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #1289A7;" styleClass="button" stylesheets="@../styles/style.css" />
+            <ImageView fitHeight="129.0" fitWidth="128.0" layoutX="73.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/menu.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="67.0" layoutY="565.0" text="Main Menu">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="394.0" text="Add Driver">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="72.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/kisspng-vector-graphics-computer-icons-taxi-clip-art-image-driver-svg-png-icon-free-download-458442-onli-5b6e54022cda76.7651502215339571221837.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="151.0" layoutY="273.0" prefHeight="75.0" prefWidth="44.0" text="+">
+               <font>
+                  <Font name="System Bold" size="61.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="283.0" onAction="#btnAddDriverList" opacity="0.0" prefHeight="152.0" prefWidth="173.0" stylesheets="@../styles/style.css" />
+            <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="456.0" onAction="#btnMenuBackDriverList" opacity="0.0" prefHeight="152.0" prefWidth="173.0" stylesheets="@../styles/style.css" text="Button" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="66.0" prefWidth="1000.0" style="-fx-background-color: #1289A7;" styleClass="button2" stylesheets="@../styles/style.css" text="Saman Rice Vehicle Parking System" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <TableView layoutX="279.0" layoutY="113.0" prefHeight="640.0" prefWidth="720.0">
+         <columns>
+            <TableColumn prefWidth="144.0" text="Name" />
+            <TableColumn prefWidth="144.0" text="Nic" />
+            <TableColumn prefWidth="144.0" text="Driving L.Number" />
+            <TableColumn prefWidth="156.0" text="Address" />
+            <TableColumn prefWidth="144.0" text="Contact" />
+         </columns>
+      </TableView>
+      <Label alignment="TOP_LEFT" layoutX="348.0" layoutY="64.0" prefHeight="36.0" prefWidth="652.0" text="       Driver List">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="323.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kisspng-vector-graphics-computer-icons-taxi-clip-art-image-driver-svg-png-icon-free-download-458442-onli-5b6e54022cda76.7651502215339571221837.png" />
+         </image>
+      </ImageView>
+      <Label alignment="BASELINE_LEFT" layoutX="867.0" layoutY="754.0" prefHeight="36.0" prefWidth="133.0" style="-fx-background-color: #ff3838;" styleClass="button" stylesheets="@../styles/style.css" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="54.0" fitWidth="45.0" layoutX="955.0" layoutY="755.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logOut.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="867.0" layoutY="754.0" onAction="#btnLogOutDriverList" opacity="0.0" prefHeight="44.0" prefWidth="133.0" stylesheets="@../styles/style.css" text="Button" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="AddDriverContext" layoutX="200.0" layoutY="100.0" prefHeight="600.0" prefWidth="600.0" />
+      <JFXButton buttonType="RAISED" layoutX="755.0" layoutY="75.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: red;" stylesheets="@../styles/style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="833.0" layoutY="75.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: blue;" stylesheets="@../styles/style.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="912.0" layoutY="75.0" style="-fx-background-color: green;" stylesheets="@../styles/style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
